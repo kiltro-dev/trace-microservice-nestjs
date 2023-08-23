@@ -3,13 +3,19 @@ GET http://localhost:3000
 GET http://localhost:3000/routes
 
 ###
-GET http://localhost:3000/routes/1
+GET http://localhost:3000/routes/64e4a5806535b4ba1f0c66c1
 ###
 POST  http://localhost:3000/routes
 Content-Type: application/json
 
 {
   "name": "route test 1",
-  "source_id": "1",
-  "destination_id": "2"
+  "source_id": "EjdBdi4gVmFscGFyYcOtc28gMTQxNCwgVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28sIENoaWxlIjESLwoUChIJy5H8m3beiZYRlK7QmGtS5ZgQhgsqFAoSCeuqG4wK3omWEZJpLNG-xgMU",
+  "destination_id": "EjRBdi4gTGliZXJ0YWQgMTQxNCwgVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28sIENoaWxlIjESLwoUChIJl6uWB8LdiZYRyAR8tg0NuHoQhgsqFAoSCYsaZejn3YmWEXd3mbqV-U81"
 }
+
+###
+GET http://localhost:3000/places?text=av libertad, 1414, viña del mar
+
+###
+GET http://localhost:3000/directions?originId=EjdBdi4gVmFscGFyYcOtc28gMTQxNCwgVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28sIENoaWxlIjESLwoUChIJy5H8m3beiZYRlK7QmGtS5ZgQhgsqFAoSCeuqG4wK3omWEZJpLNG-xgMU&destinationId=EjRBdi4gTGliZXJ0YWQgMTQxNCwgVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28sIENoaWxlIjESLwoUChIJl6uWB8LdiZYRyAR8tg0NuHoQhgsqFAoSCYsaZejn3YmWEXd3mbqV-U81
